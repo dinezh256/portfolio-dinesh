@@ -1,0 +1,1102 @@
+/*
+Table of content
+
+1. Default css
+2. Preloader css
+3. Navbar css
+4. Banner area css
+5. About area css
+6. Services area css
+7. Portfolio starts css
+8. Testimonial area css
+9. Invitation area css
+10. Contact area css
+11. Footer area css
+
+*/
+
+/*--- 1. Default CSS Starts ---*/
+
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+a,
+a:focus,
+a:active,
+a:link,
+img {
+    outline: none;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+}
+
+a:hover {
+    color: #225073;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
+}
+
+a:focus {
+    outline: none;
+    outline-offset: 0;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+p {
+    line-height: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -webkit-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+}
+h2 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: rgb(37, 37, 37);
+    text-transform: capitalize;
+}
+.section-padding {
+    padding: 90px 0;
+}
+
+.bg-overlay {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.bg-overlay.black {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.section-header {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.section-header h2::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 80px;
+    left: 50%;
+    top: 60px;
+    text-align: center;
+    z-index: -1;
+    background: #225073;
+    margin-left: -40px;
+}
+
+.section-header h2::after {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 50%;
+    top: 53px;
+    text-align: center;
+    z-index: -1;
+    background: #225073;
+    margin-left: -7px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+
+/*--- 1. Default CSS Ends ---*/
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #225073;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+
+/*---------- preloader css ends -------------*/
+
+/*--- 3. Navbar css starts ---*/
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 35px;
+}
+.navbar-custom .navbar-brand span{
+    color: rgb(0, 174, 255);
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: #225073;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+    .navbar-custom.top-nav-collapse {
+        -webkit-box-shadow: 0px 0px 2px #777;
+        box-shadow: 0px 0px 2px #777;
+        background-color: rgba(0, 0, 0, 0.97);
+        box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    }
+    .navbar-custom.top-nav-collapse .nav li a {
+        color: #fff;
+    }
+    .navbar-custom.top-nav-collapse .nav li.active a {
+        background-color: transparent;
+        color: rgb(0, 174, 255) !important;
+    }
+    .navbar-custom.top-nav-collapse .navbar-brand {
+        color: #fff;
+    }
+}
+
+/*--- 3. Navbar css ends ---*/
+
+/*--- 4. Banner area css starts ---*/
+
+.banner-area {
+    height: 100%;
+    background: #222 url("../images/home/bg-home.png") no-repeat fixed 100% 100% / cover;
+    padding: 0;
+    position: relative;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.welcome-text {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(65, 177, 112);
+    padding-top: 150px;
+}
+
+.welcome-text h1 {
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: none;
+    color: rgb(41, 179, 94);
+    line-height: 50px;
+    position: relative;
+    margin: 20px 50px;
+}
+
+.welcome-text h2 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    position: relative;
+    margin: 20px 50px;
+}
+.welcome-text h3 {
+    font-size: 20px;
+    font-family: Verdana;
+    color: rgb(224, 216, 216);
+    line-height: 50px;
+    margin: 0px;
+}
+.welcome-text h4 {
+    font-size: 18px;
+    font-family: Verdana;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(204, 194, 194);
+    line-height: 50px;
+    margin: 0px 100px;
+}
+
+.welcome-text .name-area {
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: monospace;
+    text-transform: none;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.welcome-text a {
+    display: inline-block;
+    color: #fff;
+    background-color: #225073;
+    text-align: center;
+    font-style: normal;
+    position: relative;
+    width: 200px;
+    border-radius: relative;
+    font-size: 2vw;
+}
+.welcome-text .btn {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    border-radius: 100%;
+    color: rgb(15, 153, 218);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-text .btn i{
+    line-height: inherit;
+    font-size: 30px;
+    transition: 0.3s linear;
+    position: relative;
+  }
+.welcome-text .btn:hover i{
+    transform: scale(1.25);
+    color: #f1f1f1;
+  }
+.welcome-text .btn::before{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background: rgb(15, 153, 218);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.welcome-text .btn:hover::before{
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+@keyframes aaa {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+/* instagram */
+.welcome-text .btnig {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    border-radius: 100%;
+    color: rgb(15, 153, 218);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-text .btnig i{
+    line-height: 35px;
+    margin-left: -10%;
+    font-size: 35px;
+    transition: 0.3s linear;
+    position: relative;
+  }
+.welcome-text .btnig:hover i{
+    transform: scale(1.25);
+    color: #f1f1f1;
+  }
+.welcome-text .btnig::before{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background: rgb(15, 153, 218);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.welcome-text .btnig:hover::before{
+    animation: aaig 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+@keyframes aaig {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+/* facebook */
+.welcome-text .btnf {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    border-radius: 100%;
+    color: rgb(15, 153, 218);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-text .btnf i{
+    line-height: 40px;
+    font-size: 30px;
+    transition: 0.3s linear;
+    position: relative;
+  }
+.welcome-text .btnf:hover i{
+    transform: scale(1.25);
+    color: #f1f1f1;
+  }
+.welcome-text .btnf::before{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background: rgb(15, 153, 218);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.welcome-text .btnf:hover::before{
+    animation: aaf 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+@keyframes aaf {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+/* github */
+.welcome-text .btng {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    border-radius: 100%;
+    color: rgb(15, 153, 218);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-text .btng i{
+    line-height: 35px;
+    font-size: 30px;
+    transition: 0.3s linear;
+    position: relative;
+  }
+.welcome-text .btng:hover i{
+    transform: scale(1.25);
+    color: #f1f1f1;
+  }
+.welcome-text .btng::before{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background: rgb(15, 153, 218);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.welcome-text .btng:hover::before{
+    animation: aag 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+@keyframes aag {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+
+/* linkedin */
+
+.welcome-text .btnl {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    border-radius: 100%;
+    color: rgb(15, 153, 218);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-text .btnl i{
+    line-height: 38px;
+    font-size: 30px;
+    transition: 0.3s linear;
+    position: relative;
+  }
+.welcome-text .btnl:hover i{
+    transform: scale(1.25);
+    color: #f1f1f1;
+  }
+.welcome-text .btnl::before{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background: rgb(15, 153, 218);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.welcome-text .btnl:hover::before{
+    animation: aal 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+@keyframes aal {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+
+/* mail */
+  .welcome-text .btnm {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    background: #f1f1f1;
+    border-radius: 100%;
+    color: rgb(15, 153, 218);
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome-text .btnm i{
+    line-height: 35px;
+    margin-left: -2px;
+    font-size: 30px;
+    transition: 0.3s linear;
+    position: relative;
+  }
+.welcome-text .btnm:hover i{
+    transform: scale(1.25);
+    color: #f1f1f1;
+  }
+.welcome-text .btnm::before{
+    content: "";
+    position: absolute;
+    width: 125%;
+    height: 125%;
+    background: rgb(15, 153, 218);
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+.welcome-text .btnm:hover::before{
+    animation: aam 0.7s 1;
+    top: -10%;
+    left: -10%;
+  }
+@keyframes aam {
+    0%{
+      left: -110%;
+      top: 90%;
+    }50%{
+      left: 10%;
+      top: -30%;
+    }100%{
+      top: -10%;
+      left: -10%;
+    }
+  }
+
+
+  .welcome-text .btn2 {
+    display: inline-block;
+    width: 200px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 55px;
+    background: rgb(0, 174, 255);
+    border-radius: 30px;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .welcome-text .btn3 {
+    display: inline-block;
+    align-content: center;
+    width: 200px;
+    height: 55px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    background: rgb(0, 174, 255);
+    border-radius: 30px;
+    color: #ffffff;
+    overflow: hidden;
+    position: relative;
+  }
+
+/*--- 4. Banner area css ends ---*/
+
+/*--- 5. About area css starts ---*/
+
+.line {
+    height: 2px;
+    background: #225073;
+    width: 200px;
+}
+
+.about-left h2 {
+    font-size: 27px;
+    line-height: 30px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.about-left h4 {
+    text-transform: none;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 22px;
+    line-height: 34px;
+    margin: 20px 0 30px;
+    /width: 80%;
+    color: #333333
+}
+
+.about-left h5 {
+    text-transform: none;
+    font-weight: 400;
+    text-align: justify;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 20px 0 30px;
+    color: #474444
+}
+
+
+.about-left a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+    background: #225073;
+    padding: 0 20px;
+    height: 60px;
+    width: 260px;
+    border-radius: 30px;
+    font-size: 25px;
+
+}
+/*--- Education area starts ---*/
+.education-left h2 {
+    text-transform: none;
+    text-align: left;
+    font-size: 27px;
+    line-height: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: #131212;
+}
+
+.education-branch h3 {
+    text-shadow: 3px 2px red;
+    text-transform: none;
+    letter-spacing: 3px;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #333333;
+}
+
+.education-branch h4 {
+    text-shadow: 3px 2px red;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #333333;
+}
+
+.education-branch h5, h6 {
+    text-shadow: 3px 2px red;
+    text-transform: none;
+    text-align: left;
+    letter-spacing: 3px;
+    font-size: 20px;
+    padding-top: 10px;
+    color: #141414;
+}
+
+
+/*--- Eduation area ends ---*/
+/*--- 5. About area ends ---*/
+
+/*--- 6. Services area css starts ---*/
+.single-service{
+    margin-bottom: 30px;
+}
+
+.single-service i {
+    font-size: 50px;
+    text-align: center;
+    height: 80px;
+    padding-top: 10px;
+    -webkit-transition: all .3s ease 0s;
+    -o-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+}
+
+.single-service h2 {
+    color: #2e2c2c;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.single-service:hover i {
+    color: rgb(0, 174, 255);
+    padding: 0;
+}
+.single-service:hover h2 {
+    color: rgb(0, 174, 255);
+}
+
+/*--- 6. services area ends ---*/
+
+/*--- 7. Portfolio starts css starts---*/
+
+.gallery-items {
+    position: relative;
+}
+
+.gallery-items .img {
+    display: block;
+    position: relative;
+}
+
+.gallery-items .img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(80, 80, 80, 0.7);
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: .7s;
+    -moz-transition: .7s ;
+    -ms-transition: .7s ;
+    -o-transition: .7s ;
+    transition: .7s ;
+
+}
+
+.gallery-items .img img {
+    width: 100%;
+}
+
+.gallery-items:hover .img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    opacity: 1;
+}
+
+.gallery-items:hover .gallery-text {
+    opacity: 1;
+    -webkit-transition: .9s;
+    -moz-transition: .9s ;
+    -ms-transition: .9s ;
+    -o-transition: .9s ;
+    transition: .9s ;
+}
+
+.gallery-text {
+    opacity: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-width: 80%;
+    text-align: center;
+}
+
+.gallery-text i {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.gallery-text h3 {
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.gallery-text h3:after {
+    height: 3px;
+}
+
+.gallery-text h2 {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.portfolio-mini-desc p {
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: .05em;
+    font-weight: 300;
+}
+
+/*---portfolio ends---*/
+
+/*---8. Testimonial area css starts---*/
+
+
+.client-img {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#testimonial-carousel .item {
+    text-align: center;
+    color: #fff;
+}
+
+#testimonial-carousel .item h5{
+    color: #000000;
+    margin-top: 20px;
+}
+
+#testimonial-carousel .item p {
+    width: 70%;
+    margin: 20px auto;
+    color: #333333;
+}
+
+#testimonial-carousel .item i {
+    font-size: 45px;
+    text-align: center;
+    line-height: 45px;
+    width: 100%;
+    margin: 0px auto 30px;
+    color: #000;
+}
+
+#testimonial-carousel .carousel-indicators {
+    bottom: -45px;
+}
+
+#testimonial-carousel .carousel-indicators li {
+    margin: 5px;
+    cursor: pointer;
+    opacity: 0.4;
+    transition: all 0.4s;
+    border-color: #000000;
+}
+
+#testimonial-carousel .carousel-indicators .active {
+    opacity: 1;
+    background: #000000;
+}
+
+/*---8. Testimonial area css ends---*/
+
+/*--- 9. Invitation area css starts ---*/
+
+.invitation-area{
+    background: #333333;
+    color: #ffffff;
+}
+
+.single-invite h2 {
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: none;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.single-invite p {
+    width: 70%;
+    margin: auto;
+    color: #ffffff;
+}
+.single-invite a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background: #225073;
+    margin-top: 20px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+/*--- invitation area ends ---*/
+
+/*-------------10. Contact area css starts -------------*/
+
+
+.contact-area .form-control{
+    border: none;
+    border-bottom: 2px solid #a2a2a2;
+    box-shadow: none;
+    padding: 6px 0;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+
+.contact-area textarea.form-control{
+    border:2px solid #a2a2a2;
+    padding: 6px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.btn.btn-send {
+    background: #225073;
+    color: #ffffff;
+    border-radius: 25px;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*------------- Contact area ends -------------*/
+
+/*--------------11. Footer area css starts -------------*/
+
+
+.footer-area {
+    background: #232323;
+    padding: 10px;
+}
+.footer-area p{
+    text-align: right;
+    font-size: 15px;
+    color: #ffffff;
+}
+.footer-area p a{
+    color: #225073;
+}
+
+/*--------------- Footer area ends -------------*/

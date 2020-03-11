@@ -1,0 +1,290 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div id="home" class="banner-area section-padding">
+        <div class="bg-overlay black"></div>
+        <div class="containter">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 visible-lg visible-md visible-sm">
+                    <div class="welcome-text">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Hello World, I am_</h1>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Dinesh Shaw</h2>
+                        <!-- <h3 class="wow fadeInLeft" data-wow-delay="0.4s">A passionate tech-savvy guy. Likes to code.</h3> -->
+                        <br>
+                        <h4 class="wow fadeInRight" data-wow-delay="0.4s">Jamshedpur,&ensp;Jharkhand,&ensp;India</h4>
+                        <h4 class="wow fadeInRight" data-wow-delay="0.4s"><i class="fa fa-phone"></i>&ensp;+917979060821</h4>
+                        <br/>
+                        <a href="https://www.github.com/dinezh256" target = "_blank" class="btn">
+                            <i class = "fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dinesh-shaw-60343361" target = "_blank" class="btn">
+                            <i class = "fa fa-linkedin"></i>
+                        
+                        </a>
+                        <a href="https://www.facebook.com/dinezh254/" target = "_blank" class="btn">
+                            <i class = "fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hsenidton" target = "_blank" class="btn">
+                            <i class = "fa fa-instagram"></i>
+                        </a>
+                        <a href="mailto: idineshshaw7@gmail.com" target = "_blank" class="btn">
+                            <i class = "fa fa-envelope"></i>
+                        </a>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <!-- <a href="#about" class="btn2 my-btn-1 wow fadeInDown" data-wow-delay="0.5s">Know More</a> -->
+                        <a href="#contact" class="btn2 my-btn-2 wow fadeInDown" data-wow-delay="0.7s">CONTACT ME</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-xs-12 visible-xs">
+                    <div class="welcome-text">
+                        <h1 class="wow fadeInUp" data-wow-delay="0.2s">Hello World, I am_</h1>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s">Dinesh Shaw</h2>
+                        <!-- <h3 class="wow fadeInLeft" data-wow-delay="0.4s">A passionate tech-savvy guy. Likes to code.</h3> -->
+                        <br>
+                        <h4 class="wow fadeInRight" data-wow-delay="0.4s">Jamshedpur Jharkhand, India</h4>
+                        <h4 class="wow fadeInRight" data-wow-delay="0.4s"><i class="fa fa-phone"></i>&ensp;+917979060821</h4>
+                        <br/>
+                        <a href="https://www.github.com/dinezh256" target = "_blank" class="btng">
+                            <i class = "fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/dinesh-shaw-60343361" target = "_blank" class="btnl">
+                            <i class = "fa fa-linkedin"></i>
+                        
+                        </a>
+                        <a href="https://www.facebook.com/dinezh254/" target = "_blank" class="btnf">
+                            <i class = "fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/hsenidton" target = "_blank" class="btnig">
+                            <i class = "fa fa-instagram"></i>
+                        </a>
+                        <a href="mailto: idineshshaw7@gmail.com" target = "_blank" class="btnm">
+                            <i class = "fa fa-envelope"></i>
+                        </a>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <!-- <a href="#about" class="btn3 my-btn-1 wow fadeInDown" data-wow-delay="0.5s">Know More</a> -->
+                        <a href="#contact" class="btn3 my-btn-2 wow fadeInDown" data-wow-delay="0.7s">CONTACT ME</a>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#    About section#}
+    <div id="about" class="about-area section-padding visible-lg visible-md">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-8 col-xs-8 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-left">
+                        <h2 class="section-title">Let Me introduce myself</h2>
+                        <div class="line"></div>
+                        <h4>{{ about.short_description }}</h4>
+                        <h5 class="visible-md visible-sm visible-lg">{{ about.description }}</h5>
+                        <a href="https://drive.google.com/file/d/1Jqcov7uCOrNCwnsuMWbM61TWthIVBlyB/view?usp=sharing" target="_blank">Download CV&nbsp;<i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="about-left">
+                        </b>
+                        <img src="{{ about.image.url }}" alt="Profile image" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="about-area section-padding visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-sn-8 col-xs-8 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-left">
+                        <h2 class="section-title">Let Me introduce myself</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sn-4 col-xs-4 wow fadeInDown" data-wow-delay="0.4s">
+                    <div class="about-left">
+                        </b>
+                        <img src="{{ about.image.url }}" alt="Profile image" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-xs-12 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="about-left">
+                        <h4>{{ about.short_description }}</h4>
+                        <h5>{{ about.description }}</h5>
+                        <a href="https://drive.google.com/file/d/1Jqcov7uCOrNCwnsuMWbM61TWthIVBlyB/view?usp=sharing" target="_blank">Download CV&nbsp;<i class="fa fa-download"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {#      Education section#}
+    <div id="education" class="education-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sn-8 col-xs-12 wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="education-branch">
+                        <h2 class="education-title">My Education</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class= "row">
+                {% for ed in education %}
+                    <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay="0.2s">
+                        <h3>{{ ed.school }}</h3>
+                        <h4>{{ ed.stream }}</h4>
+                        <h5>{{ ed.year }}</h5>
+                        <h5>{{ ed.grades }}</h5>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="education" class="education-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sn-8 col-xs-12 wow fadeInDown" data-wow-delay="0.2s">
+                    <div class="education-branch">
+                        <h2 class="education-title">Internship</h2>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class= "row">
+                {% for i in internship %}
+                    <div class="col-md-4 col-sm-4 wow fadeInLeft" data-wow-delay="0.2s">
+                        <h3>{{ i.company }}</h3>
+                        <h4>{{ i.stream }}</h4>
+                        <h5>{{ i.year }}</h5>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {#    Services Section#}
+    <div id="services" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Services I offer</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for service in services %}
+                    <div class="col-md-4 col-sm-4">
+                        <div class="single-service wow fadeInDown" data-wow-delay="0.2s">
+                            <i class="icon icon-gears"></i>
+                            <h2>{{ service.name }}</h2>
+                            <p>{{ service.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {#    Recent Works Section#}
+    <div id="portfolio" class="portfolio-area section-padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header">
+                        <h2>My Recent Works</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                {% for work in works %}
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding">
+                        <div class="gallery-items wow fadeInDown" data-wow-delay="0.2s">
+                            <a class="view img" href="{{ work.image.url }}">
+                                <img src="{{ work.image.url }}" alt="work image">
+                            </a>
+
+                            <div class="gallery-text">
+                                <h2>{{ work.title }}</h2>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+
+    {#    Contact section#}
+
+    <div class="invitation-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="single-invite text-center">
+                    <h2>Do you have any project needed to be done?</h2>
+                    <p>I believe discussion can do wonders and might get the job done. Feel free to drop a message.</p>
+                    <a href="#contact" class="my-btn-3">Get started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="contact-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 box-contact-form">
+                    <form id="mG61Hd" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjYggnp4jY576caWSmkgZrFLJrrKewc57YY3Rkyj9F65pDTQ/formResponse" target="_blank" method="POST">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group wow fadeInDown" data-wow-delay="0.2s">
+                                        <input id="form_name" type="text" name="entry.177993988" class="form-control"
+                                               placeholder="Enter your full name *" required="required"
+                                               data-error="Fullname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group wow fadeInDown" data-wow-delay="0.4s">
+                                        <input id="form_email" type="email" name="entry.814283714" class="form-control"
+                                               placeholder="Enter your email *" required="required"
+                                               data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group wow fadeInUp" data-wow-delay="0.6s">
+                                        <textarea id="form_message" name="entry.963224491" class="form-control"
+                                                  placeholder="Your Message *" rows="4" required="required"
+                                                  data-error="Leave a message for me if you liked my work."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn-send" value="">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
